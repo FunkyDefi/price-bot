@@ -1,11 +1,19 @@
-// https://www.coingecko.com/en/coins/{revenue-coin} <- this is the coingecko id
-// or this https://api.coingecko.com/api/v3/search?query=rvc
-// Strings or text with are written inside these -> `` can have
-// variables put inside it. e.g.
-//
-// const name = 'Dodus'
-// `My name is ${name}` gets converted to: My name is Dodus
-//
+/** https://www.coingecko.com/en/coins/{revenue-coin} <- this is the Coingecko id
+ * or this https://api.coingecko.com/api/v3/search?query=rvc
+ *
+ * .env file gets loaded in and those variables are available like this
+ *
+ * process.env.YOUR_VARIABLE
+ *
+ * Don't add that file to git. Create it on the serer
+ *
+ * Strings or text with are written inside these -> `` can have
+ * variables put inside it. e.g.
+ *
+ * const name = 'Dodus'
+ * `My name is ${name}` gets converted to: My name is Dodus
+*/
+
 // Imports
 require('dotenv').config({ path: './.env' });
 const axios = require('axios');
